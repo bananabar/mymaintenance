@@ -1,0 +1,41 @@
+
+<!--pages/stationmessage/Record/Record.wxml-->
+<view class="container1">
+  <view class="category-item" wx:for="{{record}}" wx:key="1">
+    <block>
+      <view class="detail-item ">
+        <text>维修时间</text>
+        <text>{{item.CreateDate}}</text>
+      </view>
+    </block>
+    <block>
+      <view class="detail-item ">
+        <text>维修结果</text>
+        <text>{{item.Result}}</text>
+      </view>
+    </block>
+    
+    <block>
+      <view class="detail-item ">
+        <text>设备评价</text>
+        <text>{{item.Evaluation}}</text>
+      </view>
+    </block>
+    <block>
+      <view class="detail-item ">
+        <text>故障描述</text>
+        <view>
+          <text>{{item.Question}}</text>
+        </view>
+      </view>
+    </block>
+    <block>
+      <view class="note-item ">
+        <text>备注:</text>
+        <view class="text-item">
+          <text>{{item.Note}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

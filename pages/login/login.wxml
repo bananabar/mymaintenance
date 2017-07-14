@@ -1,0 +1,33 @@
+<view class="page-body">
+  <view class="page-section">
+    <view class="page-body-info">
+      <view class="imgcla">
+        <image class="userinfo-avatar" src="../../Image/index2.png"></image>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">账号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="text" value="{{username}}" placeholder="请输入账号" bindinput="bindusername"></input>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">密码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" confirm-type="go" type="text" password="true" placeholder="请输入密码" value="{{password}}" bindinput="bindpassword"></input>
+        </view>
+      </view>
+      <view class="mima">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="checkbox">
+            <checkbox checked="{{isremenpasschecked}}" />记住密码
+          </label>
+        </checkbox-group>
+      </view>
+      <button style="color: #fff;background-color: #08d6d6;width:50%;" bindtap="login" hover-class="button-hover" type="primary">登录</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+@import "../../utils/weui.wxss";
+
+page {
+  background-color: #fff;
+}
+
+.mima {
+  position: relative;
+  flex: 1;
+  padding-top: 20rpx;
+}
+
+.userinfo-avatar {
+  border-radius: 128rpx;
+  width: 128rpx;
+  height: 128rpx;
+}
+
+.imgcla {
+  align-items: center;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.page-body-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 50rpx 0 150rpx 0;
+}
+
+.weui-cell::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2rpx;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.weui-cell::before {
+  display: none;
+}
